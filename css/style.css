@@ -7,29 +7,25 @@
     padding:20px;
     border:2px solid black;
 }
-.card-container{
-    border: 1px solid black;
-}
+
 .header {
-    text-align: center;
     background-color: lightgreen;
     grid-area: hd;
 }
 
 .nav {
-    text-align: center;
     background-color: lightgray;
     grid-area: sd;
 }
 
 .main{
-    text-align: center;
     background-color: lightblue;
     grid-area: mn;
+    padding:20px;
+    border:2px solid black;
 }
 
 .footer{
-    text-align: center;
     background-color: lightcoral;
     grid-area: ft;
 }
@@ -57,21 +53,26 @@
     .card-container{ /*modififaction for cards in the main section*/
         display:grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        
 
     }
     .card-container article:nth-child(1){ 
         grid-column:1/-1;
         border: 1px solid black;
         padding: 20px;
+        
     }
     .card-container article:nth-child(2){
         grid-column:1/2;
         border: 1px solid black;
         padding: 20px;
+    
     }
     .card-container article:nth-child(3){
         grid-column:2/3;
         border: 1px solid black;
         padding: 20px;
+       
     }
 }
